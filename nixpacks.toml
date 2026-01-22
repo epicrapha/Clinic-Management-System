@@ -8,4 +8,4 @@ cmds = ["composer install --no-interaction --prefer-dist --optimize-autoloader"]
 cmds = ["npm install && npm run dev"]
 
 [start]
-cmd = "php artisan optimize && php artisan migrate --force && php -S 0.0.0.0:$PORT -t public/"
+cmd = "php artisan config:clear && php artisan optimize && php artisan migrate --force && php -S 0.0.0.0:$PORT -t public/"
