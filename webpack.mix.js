@@ -212,9 +212,9 @@ mix.sass('resources/assets/front/scss/main.scss',
 
 // front third party CSS
 mix.styles([
-    'public/assets/front/vendor/bootstrap.min.css',
-    'public/assets/front/vendor/slick.css',
-    'public/assets/front/vendor/slick-theme.css',
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/slick-carousel/slick/slick-theme.css',
 ], 'public/css/front-third-party.css')
 
 //smart card pdf
