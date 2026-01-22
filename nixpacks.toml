@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["php81", "php81Packages.composer", "php81Extensions.gd", "php81Extensions.bcmath", "php81Extensions.intl", "php81Extensions.zip", "nodejs"]
+
+[phases.build]
+cmds = ["composer install --no-dev --optimize-autoloader", "npm install && npm run dev"]
+
+[phases.deploy]
+cmds = ["php artisan migrate --force"]
