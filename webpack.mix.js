@@ -155,7 +155,7 @@ mix.scripts([
     'resources/theme/js/vendor.js',
     'resources/theme/js/plugins.js',
     'public/messages.js',
-    'public/assets/front/vendor/jquery.min.js',
+    'node_modules/jquery/dist/jquery.min.js',
     'public/assets/front/vendor/magnific-popup/jquery.magnific-popup.js',
     'public/assets/front/vendor/bootstrap.bundle.min.js',
     'public/assets/front/vendor/bootstrap-select/js/bootstrap-select.min.js',
