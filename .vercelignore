@@ -1,12 +1,1 @@
-/node_modules
 /vendor
-/storage
-/bootstrap/cache
-.env
-.git
-README.md
-task.md
-walkthrough.md
-implementation_plan.md
-import_sql.php
-import_sql_robust.php
