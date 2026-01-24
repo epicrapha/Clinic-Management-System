@@ -17,12 +17,12 @@ class SetLanguage
     public function handle(Request $request, Closure $next): Response
     {
         $localeLanguage = Session::get('languageName');
-        $lan = Setting::where('key','language')->get()->toArray()[0];
 
-        if (! isset($localeLanguage) ) {
+        $lan = Setting::where('key', 'language')->first();
 
-            \App::setLocale($lan['value']);
-
+        if (!isset($localeLanguage)) {
+            $value = $lan ? $lan->value : config('app.locale');
+            \App::setLocale($value);
         } else {
             \App::setLocale($localeLanguage);
         }
